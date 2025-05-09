@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NHS Secretary Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #00274d;
+      --lightblue: #a3d5ff;
+      --grey: #f1f1f1;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    body {
+      background-color: var(--grey);
+      color: #333;
+    }
+
+    nav {
+      background-color: var(--navy);
+      padding: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--lightblue);
+      color: var(--navy);
+    }
+
+    section {
+      padding: 3rem 2rem;
+      background-color: var(--white);
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--navy);
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      background-color: var(--grey);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    .emoji-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#home">🏠 Home</a></li>
+      <li><a href="#highlights">📝 Highlights</a></li>
+      <li><a href="#calendar">📅 Calendar</a></li>
+      <li><a href="#todos">✅ To-Dos</a></li>
+    </ul>
+  </nav>
+
+  <header style="
+  background-color: #a3d5ff;
+  color: #00274d;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+">
+  📘 NHS Weekly Dashboard
+</header>
+
+  <section id="home">
+    <h1 class="emoji-title">🏠 Welcome - Week of 5/5-5/9</h1>
+    <p>Hey guys!
+        Hope you’re all doing well! Here’s your friendly weekly roundup to keep us all in the loop. As always, if there’s anything I’ve missed or you need a hand with, just let me or another board member know.</p>
+    <p> 👋 This is your cozy dashboard to keep everything organized and stress-free. Use the menu above to navigate through your meeting notes, upcoming events, and reminders for the week.</p>
+    <p>Thanks everyone for all your hard work and support. Let’s have a great week!
+        <p>Warm wishes </p>
+        <p>-Your Secretary 💗</p>
+  </section>
+
+  <section id="highlights">
+    <h1 class="emoji-title">📝 Last Week’s Meeting Highlights</h1>
+    <ul>
+      <li>👥 Finalized officer roles for 2025/2026 School Year</li>
+      <li>🔅 Discussed the planning for the Cultural Luncheon: Check reminders</li>
+      <li>🕒 Collecting ideas about service events for the 2025/2026 calendar</li>
+    </ul>
+  </section>
+
+  <section id="calendar">
+    <h1 class="emoji-title">📅 What’s Coming Up</h1>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <tr>
+            <td>May 15</td>
+            <td>📢 NHS Meeting During Lunch in 9/10 English Room</td>
+          </tr>
+      </tr>
+      <tr>
+        <td>May 16</td>
+        <td>🍱 Cultural Luncheon @ the MS/US Commons</td>
+      </tr>
+      <tr>
+        <td>May 20</td>
+        <td>🎪 Placeholder</td>
+      </tr>
+      <tr>
+        <td>June 11</td>
+        <td>📦 End of School</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="todos">
+    <h1 class="emoji-title">🛠️ To-Dos & Reminders</h1>
+    <ul>
+      <li>📋 Submit minutes for last meeting</li>
+      <li>📬 Send list of food you're bringing for upcoming Luncheon - No reumbersments</li>
+      <li>🖨️ Create and print labels and posters for Cultural Luncheon</li>
+      <li>🗂️ Organize folder for End of School events</li>
+      <li>🖋️ Ensure you sign your name on the Record Book (for new inductees)</li>
+    </ul>
+  </section>
+  <section id="treasury">
+    <h1 class="emoji-title">💰 Treasury Report</h1>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Income</th>
+        <th>Expense</th>
+        <th>Balance</th>
+      </tr>
+      <tr>
+        <td>May 1</td>
+        <td>Donation from fundraiser</td>
+        <td>$150.00</td>
+        <td>—</td>
+        <td>$1,050.00</td>
+      </tr>
+      <tr>
+        <td>May 3</td>
+        <td>Snacks for blood drive</td>
+        <td>—</td>
+        <td>$25.00</td>
+        <td>$1,025.00</td>
+      </tr>
+      <tr>
+        <td>May 6</td>
+        <td>Club T-shirt sales</td>
+        <td>$200.00</td>
+        <td>—</td>
+        <td>$1,225.00</td>
+      </tr>
+    </table>
+  </section>
+</body>
+</html>
